@@ -12,8 +12,8 @@ Dan - Zane
 
 #### Your task
 
-Create a web app that has at least one database model. It must meet the following requirements:
- - Have the ability to create new instances of the model in the database.
+Create a web app that has at least one database [model](http://mongoosejs.com/docs/models.html). It must meet the following requirements:
+ - Have the ability to create new instances of the [model](http://mongoosejs.com/docs/models.html) in the database.
  - Show a useful subset of database entries. (Look into [sorting, filtering, and selecting](http://mongoosejs.com/docs/queries.html))
  - Update a database entry. ([Updating an entry](http://mongoosejs.com/docs/documents.html))
  - Style (with CSS) your page(s). ([Static files](https://expressjs.com/en/starter/static-files.html))
