@@ -13,8 +13,8 @@ router.get('/', function(req, res, next) {
 
 
 
-var TeacherLogins = [[lhaynes, lhaynesPW], [egaffney, egaffneyPW] ];
-var StudentLogins = [[qvoboril, qvoborilPW], [awoodard, awoodardPW]]
+var TeacherLogins = [["lhaynes", "lhaynesPW"], ["egaffney", "egaffneyPW"]];
+var StudentLogins = [["qvoboril", "qvoborilPW"], ["awoodard", "awoodardPW"]]
 
 var userLoginSchema = new Schema({
     username: String,
@@ -29,8 +29,10 @@ router.get('/get-data', function(req, res, next) {
   }
   else if(StudentLogins.contains([UserLogin.find(username), UserLogin.find(password)])){
         res.render('student', {username: UserLogin.find(username)});
-    }
-
+  }
+  else{
+      console.error('error, no qualifications found');
+  }
 
     // UserData.find()
     //     .then(function(doc) {
