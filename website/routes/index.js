@@ -10,15 +10,6 @@ var Schema = mongoose.Schema;
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'KDS TurnItIn' });
 });
-router.get('/get-data', function(req, res, next) {
-
-});
-router.post('/teacher', function (req, res, next) {
-    var item = {
-      user: req.body
-    }
-})
-
 
 
 
