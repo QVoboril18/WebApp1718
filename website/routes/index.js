@@ -13,8 +13,8 @@ router.get('/', function(req, res, next) {
 
 
 
-var TeacherLogins = [[lhaynes, lhaynesPW], [egaffney, egaffneyPW] ];
-var StudentLogins = [[qvoboril, qvoborilPW], [awoodard, awoodardPW]]
+var TeacherLogins = [["lhaynes", "lhaynesPW"], ["egaffney", "egaffneyPW"]];
+var StudentLogins = [["qvoboril", "qvoborilPW"], ["awoodard", "awoodardPW"]]
 
 var userLoginSchema = new Schema({
     username: String,
