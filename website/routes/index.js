@@ -25,10 +25,10 @@ var UserLogin = mongoose.model('UserLogin', userLoginSchema);
 
 router.get('/get-data', function(req, res, next) {
   if(TeacherLogins.contains([UserLogin.find(username), UserLogin.find(password)])){
-    res.render('teacher');
+    res.render('/teacher');
   }
   else if(StudentLogins.contains([UserLogin.find(username), UserLogin.find(password)])){
-        res.render('student');
+        res.render('/student');
   }
   else{
       console.error('error, no qualifications found');
