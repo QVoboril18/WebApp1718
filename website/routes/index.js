@@ -17,8 +17,8 @@ var TeacherLogins = [["lhaynes", "lhaynesPW"], ["egaffney", "egaffneyPW"]];
 var StudentLogins = [["qvoboril", "qvoborilPW"], ["awoodard", "awoodardPW"]]
 
 var userLoginSchema = new Schema({
-    username: req.body.username,
-    password: req.body.password
+    username: index.body.username,
+    password: index.body.password
 }, {collection: 'user-login'});
 
 var UserLogin = mongoose.model('UserLogin', userLoginSchema);
